@@ -22,8 +22,8 @@
     </div>
   </header>
 
-  <main class="container reveal" id="articleView">
-    <article id="articleContent"></article>
+  <main class="container reveal">
+    <article id="articleContent" class="article-view"></article>
   </main>
 
   <footer class="footer">
@@ -48,47 +48,16 @@
           return;
         }
 
-        // Render Inhalt
         container.innerHTML = `
           <h1>${article.title}</h1>
           <div class="meta">${article.category} • ${new Date(article.date).toLocaleDateString("de-DE")}</div>
           <div class="body">${article.body_html}</div>
-
-          <div class="interact">
-            <button class="like-btn">❤️ Gefällt mir</button>
-            <div class="stars">
-              <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-            </div>
-            <button id="shareBtn">🔗 Teilen</button>
-          </div>
-
+          <hr>
+          <button id="shareBtn" class="share-btn">🔗 Artikel teilen</button>
           <a href="index.html" class="back-link">← Zurück zur Startseite</a>
         `;
 
-        // Like speichern
-        const likeBtn = document.querySelector(".like-btn");
-        const liked = localStorage.getItem("liked_" + slug);
-        if (liked) likeBtn.classList.add("active");
-
-        likeBtn.addEventListener("click", () => {
-          likeBtn.classList.toggle("active");
-          localStorage.setItem("liked_" + slug, likeBtn.classList.contains("active"));
-        });
-
-        // Sterne-Bewertung speichern
-        const stars = document.querySelectorAll(".stars span");
-        const savedRating = localStorage.getItem("rating_" + slug);
-        if (savedRating) highlightStars(savedRating);
-
-        stars.forEach((star, index) => {
-          star.addEventListener("click", () => {
-            const rating = index + 1;
-            highlightStars(rating);
-            localStorage.setItem("rating_" + slug, rating);
-          });
-        });
-
-        // Teilen
+        // Teilen-Funktion
         document.getElementById("shareBtn").addEventListener("click", async () => {
           const shareData = {
             title: article.title,
@@ -103,17 +72,50 @@
           }
         });
 
-        function highlightStars(n) {
-          stars.forEach((s, i) => {
-            s.style.color = i < n ? "gold" : "gray";
-          });
-        }
-
       } catch (err) {
         container.innerHTML = "<p>Fehler beim Laden des Artikels.</p>";
       }
     }
     loadArticle();
   </script>
+
+  <style>
+    .article-view h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .article-view .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .article-view .body {
+      line-height: 1.6;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+    .share-btn {
+      background: var(--accent);
+      border: none;
+      color: var(--text);
+      padding: 8px 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s;
+      margin-right: 14px;
+    }
+    .share-btn:hover {
+      background: rgba(255,255,255,0.1);
+    }
+    .back-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 15px;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </body>
 </html>
