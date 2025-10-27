@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – NEEDLEX</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav glass">
+    <div class="nav-inner">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Logo" />
+        <span>NEEDLEX</span>
+      </div>
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="about.html">Über uns</a>
+        <a href="contact.html" class="active">Kontakt</a>
+        <button id="modeToggle">🌗</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container reveal">
+    <h1>Kontaktiere uns</h1>
+    <p class="sub">Wir freuen uns über dein Feedback oder deine Frage.</p>
+
+    <form id="contactForm" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Dein Name" required>
+
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" name="email" placeholder="deinname@mail.de" required>
+
+      <label for="message">Nachricht</label>
+      <textarea id="message" name="message" rows="5" placeholder="Schreibe deine Nachricht..." required></textarea>
+
+      <button type="submit">Nachricht senden</button>
+    </form>
+
+    <div id="successMessage" class="success-msg" hidden>
+      ✅ Vielen Dank! Deine Nachricht wurde erfolgreich gesendet.
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> NEEDLEX</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const form = document.getElementById("contactForm");
+    const success = document.getElementById("successMessage");
+
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      form.reset();
+      success.hidden = false;
+      setTimeout(() => success.hidden = true, 4000);
+    });
+  </script>
+
+  <style>
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      background: var(--card);
+      padding: 28px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.08);
+      margin-top: 20px;
+      max-width: 600px;
+    }
+    .contact-form label {
+      font-weight: 600;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 10px 12px;
+      color: var(--text);
+      font-size: 15px;
+      outline: none;
+      resize: none;
+    }
+    .contact-form button {
+      align-self: flex-start;
+      background: var(--accent);
+      border: none;
+      color: var(--text);
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .contact-form button:hover {
+      background: rgba(255,255,255,0.08);
+    }
+    .success-msg {
+      margin-top: 20px;
+      color: #4caf50;
+      font-weight: 600;
+      text-align: center;
+    }
+  </style>
+</body>
+</html>
