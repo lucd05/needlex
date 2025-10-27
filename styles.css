@@ -12,15 +12,16 @@
   --blur: 15px;
 }
 
-/* Light Mode Variablen */
+/* Light Mode – überarbeitet für besseren Kontrast */
 [data-theme="light"] {
-  --bg: #f8f9fb;
-  --text: #0b0b0c;
-  --muted: #555;
-  --accent: #e9e9ea;
-  --card: #fff;
-  --shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  --bg: #f5f6f7;                /* leicht grauer Hintergrund, nicht rein weiß */
+  --text: #111111;              /* kräftiges Schwarz für Lesbarkeit */
+  --muted: #444444;             /* dunkleres Grau für Nebeninfos */
+  --accent: #e3e5e8;            /* etwas dunklerer Akzent, klarer Unterschied zu Hintergrund */
+  --card: #ffffff;              /* weiße Karten bleiben klar erkennbar */
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);  /* etwas stärkerer Schatten für Tiefe */
 }
+
 
 /* Grundlayout */
 * {
