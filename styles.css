@@ -1,0 +1,293 @@
+/* === NEEDLEX FINAL – Dark Apple Edition === */
+
+/* Grundfarben */
+:root {
+  --bg: #0b0b0c;
+  --text: #f5f5f7;
+  --muted: #b3b3b3;
+  --accent: #1e1e20;
+  --card: #121214;
+  --shadow: 0 6px 26px rgba(0, 0, 0, 0.45);
+  --radius: 18px;
+  --blur: 15px;
+}
+
+/* Light Mode Variablen */
+[data-theme="light"] {
+  --bg: #f8f9fb;
+  --text: #0b0b0c;
+  --muted: #555;
+  --accent: #e9e9ea;
+  --card: #fff;
+  --shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Grundlayout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+/* === Navigation === */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(var(--blur)) saturate(160%);
+  background: rgba(18, 18, 20, 0.65);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 22px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.6px;
+}
+
+.logo img {
+  width: 28px;
+  height: 28px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+nav a.active,
+nav a:hover {
+  color: var(--text);
+}
+
+#modeToggle {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#modeToggle:hover {
+  transform: rotate(15deg);
+}
+
+/* === Hero-Bereich === */
+.hero {
+  text-align: center;
+  padding: 100px 16px 60px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hero .sub {
+  color: var(--muted);
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+/* === Suche === */
+.search-box {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card);
+  border-radius: 999px;
+  padding: 14px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow);
+}
+
+.search-box .icon {
+  width: 20px;
+  height: 20px;
+  stroke: var(--muted);
+  stroke-width: 2;
+  fill: none;
+}
+
+.search-box input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.suggestions {
+  position: relative;
+  margin: 12px auto 0;
+  max-width: 680px;
+  background: var(--card);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow);
+}
+
+.suggestions a {
+  display: block;
+  padding: 12px 16px;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.suggestions a:last-child {
+  border-bottom: none;
+}
+
+.suggestions .k {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Suchverlauf */
+.recent {
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.recent span {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 50px;
+  margin: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+.recent span:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* === Neueste Liste === */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+.container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.list {
+  display: grid;
+  gap: 12px;
+}
+
+.list a.item {
+  display: block;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.2s, background 0.2s;
+}
+.list a.item:hover {
+  transform: translateY(-2px);
+  background: #17181a;
+}
+.list strong {
+  font-size: 17px;
+  display: block;
+  margin-bottom: 4px;
+}
+.list .meta {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* === Footer === */
+.footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 60px 16px;
+  font-size: 14px;
+}
+
+/* === Scroll Button === */
+#scrollTop {
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--text);
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  display: none;
+  box-shadow: var(--shadow);
+}
+#scrollTop.show {
+  display: block;
+}
+
+/* === Animationen === */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.show {
+  opacity: 1;
+  transform: none;
+}
+
+/* === Scrollbar (modern, Apple-Style) === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
