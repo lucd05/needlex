@@ -1,80 +1,38 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NEEDLEX – Klare Antworten auf häufige Fragen</title>
-  <link rel="preload" href="styles.css" as="style">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NEEDLEX – Finde deine Antwort</title>
   <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="NEEDLEX – Finde schnelle, klare Antworten auf häufige Fragen aus Technik, Haushalt, Haustiere, Gesundheit und Finanzen.">
 </head>
 <body>
-  <!-- Navbar -->
   <header class="nav">
-    <a class="brand" href="index.html">
-      <img src="assets/logo.svg" alt="NEEDLEX" width="28" height="28">
-      <span>NEEDLEX</span>
-    </a>
+    <a class="brand" href="index.html">NEEDLEX</a>
     <nav>
       <a href="index.html" class="active">Startseite</a>
       <a href="about.html">Über uns</a>
-      <div class="dropdown">
-        <button class="dropbtn">Kategorien</button>
-        <div class="dropdown-content">
-          <a href="#top5">Top&nbsp;5</a>
-          <a href="#neueste">Neueste</a>
-        </div>
-      </div>
     </nav>
   </header>
 
-  <!-- Hero + Suche -->
-  <section class="hero">
-    <h1 class="reveal">Klare Antworten.<br>Direkt auf den Punkt.</h1>
-    <p class="sub reveal">Suche nach Technik, Haushalt, Haustieren, Gesundheit oder Finanzen.</p>
+  <main class="hero reveal">
+    <h1>Finde deine Antwort.</h1>
+    <p class="sub">Klare Lösungen zu Alltagsthemen – schnell & einfach erklärt.</p>
 
-    <div class="search-box reveal">
-      <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
-        <path d="M10 18a8 8 0 1 1 5.293-14.293A8 8 0 0 1 10 18Zm11 3-6-6"/>
-      </svg>
-      <input id="searchInput" type="search" placeholder="z. B. Fehlercode 450 Siemens Fernseher…" autocomplete="off">
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" class="icon"><path d="M10 18a8 8 0 1 1 5.293-14.293A8 8 0 0 1 10 18Zm11 3-6-6"/></svg>
+      <input id="searchInput" type="search" placeholder="z. B. Fehlercode 450 Siemens Fernseher" autocomplete="off">
       <div id="suggestions" class="suggestions" hidden></div>
     </div>
-    <small class="hint reveal">Tipp: Tippe 2–3 Wörter, wir schlagen passende Fragen vor.</small>
-  </section>
+  </main>
 
-  <!-- Kategorien (5 große Themen) -->
-  <section class="container reveal">
-    <h2>Unsere 5 großen Themen</h2>
-    <div class="grid" id="categoryGrid">
-      <!-- Karten werden von app.js befüllt -->
-    </div>
-  </section>
-
-  <!-- Top 5 -->
-  <section class="container reveal" id="top5">
-    <div class="section-head">
-      <h2>Top 5 – Meist gesucht</h2>
-      <a class="see-all" href="#neueste">→ Neueste ansehen</a>
-    </div>
-    <div class="list" id="topList">
-      <!-- Einträge via JS -->
-    </div>
-  </section>
-
-  <!-- Neueste -->
   <section class="container reveal" id="neueste">
-    <div class="section-head">
-      <h2>Neueste Antworten</h2>
-      <a class="see-all" href="#top5">↑ Top 5</a>
-    </div>
-    <div class="list" id="latestList">
-      <!-- Einträge via JS -->
-    </div>
+    <h2>Neueste Antworten</h2>
+    <div class="list" id="latestList"></div>
   </section>
 
   <footer class="footer">
-    <p>© <span id="year"></span> NEEDLEX – Das schnelle Wissens-Lexikon.</p>
+    <p>© <span id="year"></span> NEEDLEX</p>
   </footer>
 
   <script src="app.js" defer></script>
