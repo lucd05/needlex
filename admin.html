@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin – NEEDLEX</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav glass">
+    <div class="nav-inner">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Logo" />
+        <span>NEEDLEX</span>
+      </div>
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="about.html">Über uns</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="admin.html" class="active">Admin</a>
+        <button id="modeToggle">🌗</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container reveal">
+    <h1>Artikel hinzufügen</h1>
+    <p class="sub">Erstelle hier neue Artikel, Vorschau sofort verfügbar.</p>
+
+    <form id="articleForm" class="admin-form">
+      <label for="title">Titel</label>
+      <input type="text" id="title" required>
+
+      <label for="slug">Slug (z. B. wlan-router-blinkt-rot)</label>
+      <input type="text" id="slug" required>
+
+      <label for="category">Kategorie</label>
+      <input type="text" id="category" placeholder="Technik, Haushalt, Haustiere ..." required>
+
+      <label for="summary">Kurze Zusammenfassung</label>
+      <textarea id="summary" rows="2" required></textarea>
+
+      <label for="quick">Kurzantwort</label>
+      <textarea id="quick" rows="2" required></textarea>
+
+      <label for="body">Artikel-HTML</label>
+      <textarea id="body" rows="6" placeholder="<h2>...</h2><p>...</p>" required></textarea>
+
+      <label for="keywords">Schlüsselwörter (durch Komma getrennt)</label>
+      <input type="text" id="keywords" placeholder="router, internet, technik" />
+
+      <button type="submit">Speichern</button>
+    </form>
+
+    <div id="preview" class="preview reveal"></div>
+
+    <h2>Gespeicherte Artikel (lokal)</h2>
+    <div id="savedList" class="saved-list"></div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> NEEDLEX</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    const form = document.getElementById("articleForm");
+    const savedList = document.getElementById("savedList");
+    const preview = document.getElementById("preview");
+    const LS_KEY = "needlex_local_articles";
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const loadSaved = () => {
+      const data = JSON.parse(localStorage.getItem(LS_KEY) || "[]");
+      savedList.innerHTML = data.length
+        ? data.map(a => \`
+          <div class="saved-item">
+            <strong>\${a.title}</strong>
+            <small>\${a.category}</small><br>
+            <textarea readonly rows="6">\${JSON.stringify(a, null, 2)}</textarea>
+          </div>
+        \`).join("")
+        : "<p>Noch keine Artikel gespeichert.</p>";
+    };
+    loadSaved();
+
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      const a = {
+        title: form.title.value.trim(),
+        slug: form.slug.value.trim(),
+        category: form.category.value.trim(),
+        summary: form.summary.value.trim(),
+        quick_answer: form.quick.value.trim(),
+        body_html: form.body.value.trim(),
+        keywords: form.keywords.value.split(",").map(k => k.trim()),
+        popularity: 0,
+        date: new Date().toISOString().split("T")[0]
+      };
+
+      const data = JSON.parse(localStorage.getItem(LS_KEY) || "[]");
+      data.unshift(a);
+      localStorage.setItem(LS_KEY, JSON.stringify(data));
+      loadSaved();
+
+      preview.innerHTML = \`
+        <div class="preview-card">
+          <h2>\${a.title}</h2>
+          <p><em>\${a.category}</em> • \${a.date}</p>
+          <p>\${a.summary}</p>
+          <hr>
+          <div>\${a.body_html}</div>
+        </div>\`;
+      form.reset();
+    });
+  </script>
+
+  <style>
+    .admin-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background: var(--card);
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 30px;
+      max-width: 700px;
+    }
+    .admin-form input,
+    .admin-form textarea {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 10px;
+      color: var(--text);
+      font-size: 15px;
+    }
+    .admin-form button {
+      background: var(--accent);
+      color: var(--text);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      align-self: flex-start;
+    }
+    .preview-card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.08);
+      margin-top: 20px;
+    }
+    .saved-item {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .saved-item textarea {
+      width: 100%;
+      border: none;
+      background: rgba(255,255,255,0.05);
+      color: var(--text);
+      font-family: monospace;
+      border-radius: 6px;
+      margin-top: 6px;
+    }
+  </style>
+</body>
+</html>
