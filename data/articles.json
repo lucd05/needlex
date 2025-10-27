@@ -81,4 +81,16 @@
     "popularity": 47,
     "date": "2025-10-08"
   }
+],
+  {
+    "title": "Was tun, wenn das WLAN plötzlich weg ist?",
+    "slug": "wlan-weg-was-tun",
+    "category": "Technik",
+    "summary": "Kein Internet? Meist liegt es an Router, Kabel oder Provider – so findest du’s raus.",
+    "quick_answer": "Router neu starten, Kabel prüfen, Provider-Status checken, evtl. Zugangsdaten neu eingeben.",
+    "body_html": "<h2>Schritt 1: Router neu starten</h2><p>Ziehe den Stecker für 30 Sekunden und stecke ihn wieder ein. Warte, bis alle LEDs wieder leuchten.</p><h2>Schritt 2: Kabel & Zugang prüfen</h2><p>Schau nach, ob das DSL- oder Glasfaserkabel richtig steckt. Wenn ja, prüfe die Zugangsdaten im Routermenü.</p>",
+    "keywords": ["wlan", "router", "internet", "verbindung", "technik"],
+    "popularity": 70,
+    "date": "2025-10-27"
+  }
 ]
