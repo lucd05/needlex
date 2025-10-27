@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEEDLEX – Finde deine Antwort</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <header class="nav glass">
+    <div class="nav-inner">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="NEEDLEX Logo" />
+        <span>NEEDLEX</span>
+      </div>
+      <nav id="navMenu">
+        <a href="index.html" class="active">Startseite</a>
+        <a href="about.html">Über uns</a>
+        <a href="contact.html">Kontakt</a>
+        <button id="modeToggle" title="Dark/Light Mode">🌗</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero reveal">
+    <h1>Finde deine Antwort.</h1>
+    <p class="sub">Schnell. Verständlich. Zuverlässig.</p>
+
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" class="icon">
+        <path d="M10 18a8 8 0 1 1 5.293-14.293A8 8 0 0 1 10 18Zm11 3-6-6" />
+      </svg>
+      <input id="searchInput" type="search" placeholder="z. B. Fehlercode 450 bei Siemens TV" autocomplete="off" />
+      <div id="suggestions" class="suggestions" hidden></div>
+    </div>
+
+    <div id="recentSearches" class="recent"></div>
+  </main>
+
+  <section class="container reveal">
+    <h2>Neueste Antworten</h2>
+    <div class="list" id="latestList"></div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> NEEDLEX</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
