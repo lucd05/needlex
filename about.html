@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über uns – NEEDLEX</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav glass">
+    <div class="nav-inner">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Logo" />
+        <span>NEEDLEX</span>
+      </div>
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="about.html" class="active">Über uns</a>
+        <a href="contact.html">Kontakt</a>
+        <button id="modeToggle">🌗</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container reveal">
+    <h1>Über NEEDLEX</h1>
+    <p class="sub">Antworten. Einfach. Verständlich.</p>
+
+    <section class="about-section">
+      <p>
+        <strong>NEEDLEX</strong> ist eine moderne Wissensplattform, die alltägliche Fragen schnell,
+        klar und zuverlässig beantwortet. Wir glauben, dass Wissen für alle leicht zugänglich
+        und verständlich sein sollte – ganz ohne Fachchinesisch.
+      </p>
+      <p>
+        Egal ob Technik, Haushalt oder Lifestyle – bei NEEDLEX findest du präzise Lösungen
+        zu häufigen Problemen. Wir setzen auf einfache Sprache, modernes Design
+        und ein intuitives Nutzererlebnis – inspiriert von der Eleganz großer Marken
+        und der Klarheit von Apple.
+      </p>
+      <p>
+        Unser Ziel ist es, eine Plattform zu schaffen, die du gerne nutzt,
+        wenn du eine schnelle und verlässliche Antwort brauchst – egal auf welchem Gerät.
+      </p>
+    </section>
+
+    <section class="about-section reveal">
+      <h2>Unsere Werte</h2>
+      <ul class="values">
+        <li><strong>Einfachheit:</strong> Keine unnötigen Worte, klare Antworten.</li>
+        <li><strong>Verlässlichkeit:</strong> Alle Inhalte werden geprüft und aktuell gehalten.</li>
+        <li><strong>Design:</strong> Schlicht, funktional, professionell – wie ein digitaler Assistent.</li>
+      </ul>
+    </section>
+
+    <section class="about-section reveal">
+      <h2>Das Team hinter NEEDLEX</h2>
+      <p>
+        Gegründet von <strong>Semih Özkara</strong> und <strong>Luc Wöltering</strong>, steht NEEDLEX
+        für Leidenschaft, Neugier und die Vision, Wissen neu zu denken.
+        Mit Fokus auf Qualität, Innovation und modernem Webdesign.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> NEEDLEX</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
