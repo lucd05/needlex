@@ -1,0 +1,35 @@
+[
+  {
+    "title": "WLAN-Router blinkt rot – Ursachen & 7 schnelle Checks",
+    "slug": "wlan-router-blinkt-rot",
+    "category": "Technik",
+    "summary": "Rotes Blinken heißt meist Verbindungs- oder Authentifizierungsproblem. Diagnose von einfach bis Reset.",
+    "quick_answer": "Strom/Kabel → Provider-Störung → Zugangsdaten → DSL/ONT-Sync → Firmware → Werksreset → Support.",
+    "body_html": "<h2>Was bedeutet „rot blinkend“?</h2><p>Je nach Router-Modell zeigt eine rote LED meist an, dass keine Internetverbindung besteht oder die Zugangsdaten nicht korrekt sind. Hier sind sieben einfache Schritte, um das Problem zu beheben:</p><ol><li>Router neu starten (30 Sekunden stromlos).</li><li>Alle Kabel prüfen (TAE/ONT ↔ Router, LAN ↔ PC).</li><li>Provider-Statusseite auf Störungen checken.</li><li>Zugangsdaten kontrollieren.</li><li>DSL/Glasfaser-Sync prüfen (LED).</li><li>Firmware aktualisieren.</li><li>Werksreset und Neueinrichtung.</li></ol>",
+    "keywords": ["router", "wlan", "internet", "technik", "siemens"],
+    "popularity": 80,
+    "date": "2025-10-27"
+  },
+  {
+    "title": "Was tun, wenn der Kühlschrank nicht mehr kühlt?",
+    "slug": "kuehlschrank-kuehlt-nicht",
+    "category": "Haushalt",
+    "summary": "Wenn der Kühlschrank warm bleibt, liegt es meist an der Belüftung, Dichtung oder am Thermostat.",
+    "quick_answer": "Belüftung frei? Türdichtung prüfen, Thermostat auf mittlere Stufe stellen, ggf. abtauen.",
+    "body_html": "<p>Ein nicht kühlender Kühlschrank ist oft kein Totalschaden. Häufige Ursachen sind eine blockierte Luftzirkulation, eine vereiste Rückwand oder eine defekte Dichtung. Prüfe, ob das Gerät ordnungsgemäß Strom bekommt und der Thermostat funktioniert.</p>",
+    "keywords": ["kühlschrank", "haushalt", "defekt", "thermostat", "dichtung"],
+    "popularity": 65,
+    "date": "2025-10-25"
+  },
+  {
+    "title": "Hund frisst Gras – gefährlich oder normal?",
+    "slug": "hund-frisst-gras",
+    "category": "Haustiere",
+    "summary": "Viele Hunde fressen Gras, um den Magen zu beruhigen – meist völlig harmlos.",
+    "quick_answer": "Gelegentliches Grasfressen ist normal. Bei Erbrechen oder häufigem Fressen Tierarzt konsultieren.",
+    "body_html": "<p>Hunde fressen Gras aus verschiedenen Gründen – meist, um Magenreizungen zu lindern. Solange dein Hund nicht erbricht oder übermäßig Gras frisst, ist das Verhalten unbedenklich.</p>",
+    "keywords": ["hund", "tiere", "gras", "haustiere"],
+    "popularity": 60,
+    "date": "2025-10-20"
+  }
+]
