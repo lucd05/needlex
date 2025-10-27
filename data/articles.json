@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Fehlercode 450 bei Siemens Fernseher – was tun?",
+    "slug": "fehlercode-450-siemens-fernseher",
+    "category": "Technik",
+    "summary": "Meist ein Netzwerk-/Streamingproblem: Router/TV neu starten, App/Software aktualisieren, Netzwerk prüfen.",
+    "quick_answer": "TV & Router neu starten → WLAN prüfen → Streaming-App updaten → ggf. LAN-Kabel testen → Werksreset nur als letzter Schritt.",
+    "body_html": "<h2>Warum erscheint 450?</h2><p>Häufig steht der Code 450 für Verbindungs-/Streamingfehler. Prüfe zuerst dein Netzwerk.</p><h2>Schnelle Checks</h2><ul><li>TV und Router 30–60 Sek. vom Strom trennen, neu starten.</li><li>WLAN-Stärke testen; wenn möglich, LAN-Kabel verbinden.</li><li>Streaming-App ab- und wieder anmelden, Updates installieren.</li><li>TV-Firmware aktualisieren (Einstellungen → System).</li><li>Werksreset nur, wenn alles andere nicht hilft (Achtung: setzt Einstellungen zurück).</li></ul><h2>Wenn es beim Anbieter liegt</h2><p>Manchmal liegt eine Störung beim Streamingdienst vor. Warte kurz und teste erneut.</p>",
+    "keywords": [
+      "siemens tv",
+      "fehlercode 450",
+      "streaming",
+      "netzwerk",
+      "router"
+    ],
+    "popularity": 78,
+    "date": "2025-10-20"
+  },
+  {
+    "title": "Kaffeemaschine tropft – was hilft schnell?",
+    "slug": "kaffeemaschine-tropft",
+    "category": "Haushalt",
+    "summary": "Dichtungen/Brühgruppe reinigen, Entkalken, Schläuche prüfen – oft ist es Wartung.",
+    "quick_answer": "Gerät ausschalten → abkühlen → Dichtungen säubern → Entkalken → Schläuche & Tank prüfen.",
+    "body_html": "<p>In 70% der Fälle sind Kalk oder verschmutzte Dichtungen die Ursache. Reinige die Brühgruppe, entkalke nach Anleitung und prüfe, ob der Wassertank korrekt sitzt.</p>",
+    "keywords": [
+      "kaffee",
+      "maschine",
+      "tropft",
+      "haushalt",
+      "entkalken"
+    ],
+    "popularity": 64,
+    "date": "2025-10-18"
+  },
+  {
+    "title": "Hund frisst schlecht – wann sollte ich mir Sorgen machen?",
+    "slug": "hund-frisst-schlecht",
+    "category": "Haustiere",
+    "summary": "Kurzfristig oft unkritisch – beobachte Verhalten, Wasseraufnahme und mögliche Auslöser.",
+    "quick_answer": "1–2 Tage beobachten, Wasser anbieten, Leckerlis reduzieren; bei Apathie/Erbrechen → Tierarzt.",
+    "body_html": "<p>Appetitlosigkeit kann viele Gründe haben (Hitze, Stress, Futterumstellung). Wird der Hund apathisch, erbricht oder hält es länger an, bitte Tierärzt*in kontaktieren.</p>",
+    "keywords": [
+      "hund",
+      "frisst nicht",
+      "appetit",
+      "haustiere"
+    ],
+    "popularity": 59,
+    "date": "2025-10-15"
+  },
+  {
+    "title": "Leichte Erkältung – was hilft zuhause?",
+    "slug": "leichte-erkaeltung-was-tun",
+    "category": "Gesundheit",
+    "summary": "Viel trinken, Ruhe, ggf. abschwellende Mittel kurzzeitig – bei starken Symptomen ärztlichen Rat einholen.",
+    "quick_answer": "Flüssigkeit & Ruhe, Raum lüften, Inhalation; bei Fieber/Schmerz nur zugelassene Mittel, Beipackzettel beachten.",
+    "body_html": "<p>Dies ersetzt keine Diagnose. Beobachte den Verlauf, achte auf Warnzeichen (hohes Fieber, starke Schmerzen). Im Zweifel medizinisches Fachpersonal kontaktieren.</p>",
+    "keywords": [
+      "erkältung",
+      "schnupfen",
+      "husten",
+      "gesundheit"
+    ],
+    "popularity": 52,
+    "date": "2025-10-10"
+  },
+  {
+    "title": "Rechnung prüfen – welche Punkte sind wirklich wichtig?",
+    "slug": "rechnung-pruefen-wichtige-punkte",
+    "category": "Finanzen",
+    "summary": "Name/Adresse, Leistungszeitraum, Menge/Preis, Umsatzsteuer, Zahlungsziel – alles passt?",
+    "quick_answer": "Absender/Empfänger, Datum, Positionen, Netto/Brutto, Steuersatz, Zahlungsziel & IBAN checken.",
+    "body_html": "<ul><li>Stimmen Name und Adresse?</li><li>Leistungsdatum vs. Rechnungsdatum plausibel?</li><li>Positionsmengen, Einzelpreise, Summe korrekt?</li><li>Steuersatz/Steuerbetrag klar angegeben?</li><li>IBAN, Verwendungszweck & Zahlungsziel vorhanden?</li></ul>",
+    "keywords": [
+      "rechnung",
+      "prüfung",
+      "mwst",
+      "finanzen"
+    ],
+    "popularity": 47,
+    "date": "2025-10-08"
+  }
+]
