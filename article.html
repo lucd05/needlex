@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artikel – NEEDLEX</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav glass">
+    <div class="nav-inner">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Logo" />
+        <span>NEEDLEX</span>
+      </div>
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="about.html">Über uns</a>
+        <a href="contact.html">Kontakt</a>
+        <button id="modeToggle">🌗</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container reveal" id="articleView">
+    <article id="articleContent"></article>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> NEEDLEX</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const slug = params.get("slug");
+    const container = document.getElementById("articleContent");
+    const year = document.getElementById("year");
+    year.textContent = new Date().getFullYear();
+
+    async function loadArticle() {
+      try {
+        const res = await fetch("data/articles.json");
+        const data = await res.json();
+        const article = data.find(a => a.slug === slug);
+        if (!article) {
+          container.innerHTML = "<p>Artikel nicht gefunden.</p>";
+          return;
+        }
+
+        // Render Inhalt
+        container.innerHTML = `
+          <h1>${article.title}</h1>
+          <div class="meta">${article.category} • ${new Date(article.date).toLocaleDateString("de-DE")}</div>
+          <div class="body">${article.body_html}</div>
+
+          <div class="interact">
+            <button class="like-btn">❤️ Gefällt mir</button>
+            <div class="stars">
+              <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+            </div>
+            <button id="shareBtn">🔗 Teilen</button>
+          </div>
+
+          <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+        `;
+
+        // Like speichern
+        const likeBtn = document.querySelector(".like-btn");
+        const liked = localStorage.getItem("liked_" + slug);
+        if (liked) likeBtn.classList.add("active");
+
+        likeBtn.addEventListener("click", () => {
+          likeBtn.classList.toggle("active");
+          localStorage.setItem("liked_" + slug, likeBtn.classList.contains("active"));
+        });
+
+        // Sterne-Bewertung speichern
+        const stars = document.querySelectorAll(".stars span");
+        const savedRating = localStorage.getItem("rating_" + slug);
+        if (savedRating) highlightStars(savedRating);
+
+        stars.forEach((star, index) => {
+          star.addEventListener("click", () => {
+            const rating = index + 1;
+            highlightStars(rating);
+            localStorage.setItem("rating_" + slug, rating);
+          });
+        });
+
+        // Teilen
+        document.getElementById("shareBtn").addEventListener("click", async () => {
+          const shareData = {
+            title: article.title,
+            text: article.summary,
+            url: location.href
+          };
+          try {
+            await navigator.share(shareData);
+          } catch {
+            navigator.clipboard.writeText(location.href);
+            alert("Link kopiert!");
+          }
+        });
+
+        function highlightStars(n) {
+          stars.forEach((s, i) => {
+            s.style.color = i < n ? "gold" : "gray";
+          });
+        }
+
+      } catch (err) {
+        container.innerHTML = "<p>Fehler beim Laden des Artikels.</p>";
+      }
+    }
+    loadArticle();
+  </script>
+</body>
+</html>
