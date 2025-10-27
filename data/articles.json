@@ -31,5 +31,17 @@
     "keywords": ["hund", "tiere", "gras", "haustiere"],
     "popularity": 60,
     "date": "2025-10-20"
-  }
+  },
+  {
+  "title": "Fehlercode F23 bei Bosch Geschirrspüler – Ursache & Lösung",
+  "slug": "fehlercode-f23-bosch-geschirrspueler",
+  "category": "Haushalt",
+  "summary": "Der Fehlercode F23 bei Bosch Geschirrspülern weist auf einen Wasserschutzfehler hin, meist ausgelöst durch austretendes Wasser im Gerät.",
+  "quick_answer": "Strom trennen, Wasserzufuhr schließen und prüfen, ob Wasser in der Bodenwanne steht – danach Dichtung und Aquastop kontrollieren.",
+  "body_html": "<h2>Was bedeutet Fehlercode F23?</h2><p>Der Code F23 signalisiert, dass das AquaStop-System ausgelöst wurde. Dieses Schutzsystem verhindert Wasserschäden, wenn Feuchtigkeit in die Bodenwanne gelangt. Der Sensor dort erkennt Wasser und stoppt den Zulauf.</p><h2>Typische Ursachen</h2><p>Häufig sind eine undichte Türdichtung, ein beschädigter Zulaufschlauch oder ein verstopfter Ablauf schuld. Auch überdosiertes Spülmittel kann Schaumbildung und Feuchtigkeitsstau verursachen.</p><h2>So beheben Sie den Fehler</h2><p>1. Gerät ausschalten und Netzstecker ziehen.<br>2. Wasserhahn zudrehen.<br>3. Geschirrspüler leicht nach vorn kippen, um Wasser aus der Bodenwanne ablaufen zu lassen.<br>4. Sichtprüfung: Türdichtung, Schläuche und Pumpengehäuse auf Feuchtigkeit kontrollieren.<br>5. Nach Trocknung Testlauf starten – bleibt der Fehler, sollte der Aquastop-Schlauch ersetzt werden.</p><h2>Wann ein Techniker nötig ist</h2><p>Wenn der Fehler trotz Trocknung erneut auftritt oder sich Wasser erneut in der Bodenwanne sammelt, liegt ein tiefergehender Defekt (z. B. Leck an der Umwälzpumpe) vor. In diesem Fall sollte der Kundendienst eingeschaltet werden.</p>",
+  "keywords": ["bosch", "geschirrspüler", "fehlercode f23", "aquastop", "wasserschutz", "bodenwanne", "türdichtung undicht", "geschirrspüler fehler"],
+  "popularity": 60,
+  "date": "2025-10-27"
+}
+
 ]
