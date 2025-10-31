@@ -42,6 +42,117 @@
   "keywords": ["bosch", "geschirrspüler", "fehlercode f23", "aquastop", "wasserschutz", "bodenwanne", "türdichtung undicht", "geschirrspüler fehler"],
   "popularity": 60,
   "date": "2025-10-27"
+},
+  {
+  "title": "Fehlercode E18 bei Bosch Waschmaschine – Ursache & Lösung",
+  "slug": "fehlercode-e18-bosch-waschmaschine",
+  "category": "Haushalt",
+  "summary": "Der Fehlercode E18 bei Bosch Waschmaschinen bedeutet, dass das Wasser nicht richtig abgepumpt wird.",
+  "quick_answer": "Flusensieb reinigen, Ablaufschlauch prüfen und Pumpe auf Fremdkörper kontrollieren.",
+  "body_html": "<h2>Was bedeutet Fehlercode E18?</h2><p>Der Code E18 erscheint, wenn die Maschine das Wasser nicht schnell genug abpumpen kann. Ursache sind meist Verstopfungen oder ein blockiertes Flügelrad in der Pumpe.</p><h2>Schritt-für-Schritt-Lösung</h2><p>1. Gerät ausschalten und Netzstecker ziehen.<br>2. Flusensieb unten öffnen und Wasser ablassen.<br>3. Sieb und Pumpe reinigen.<br>4. Ablaufschlauch prüfen und ggf. durchspülen.<br>5. Testlauf starten.</p><h2>Wann Service nötig ist</h2><p>Bleibt der Fehler bestehen, kann die Laugenpumpe defekt sein und sollte ausgetauscht werden.</p>",
+  "keywords": ["bosch", "waschmaschine", "fehlercode e18", "wasser bleibt stehen", "pumpe reinigen", "flusensieb", "ablaufschlauch", "abpumpfehler"],
+  "popularity": 70,
+  "date": "2025-10-27"
 }
+{
+  "title": "Trockner piept dreimal und startet nicht – was bedeutet das?",
+  "slug": "trockner-piept-dreimal-startet-nicht",
+  "category": "Haushalt",
+  "summary": "Wenn der Trockner dreimal piept und nicht startet, signalisiert das meist eine Türverriegelungs- oder Filterstörung.",
+  "quick_answer": "Türdichtung reinigen, Flusensieb leeren und Türkontakt prüfen.",
+  "body_html": "<h2>Was bedeutet das Piepen?</h2><p>Dreimaliges Piepen ist eine Fehlermeldung für eine Sicherheitsabschaltung. Das Gerät erkennt, dass die Tür nicht korrekt geschlossen ist oder die Luftzirkulation gestört wird.</p><h2>Typische Ursachen</h2><p>Verunreinigte Türkontakte, ein voller Kondenswasserbehälter oder ein verstopftes Sieb können diesen Fehler auslösen.</p><h2>Behebung</h2><p>1. Türgummi und Kontaktflächen reinigen.<br>2. Flusensieb und Kondensator gründlich säubern.<br>3. Kondenswasserbehälter leeren.<br>4. Gerät neu starten.</p>",
+  "keywords": ["trockner", "piept dreimal", "türfehler", "flusensieb", "verriegelung", "lüftungsfehler", "hausgeräte", "reinigung"],
+  "popularity": 55,
+  "date": "2025-10-27"
+}
+{
+  "title": "Auto zieht nach rechts beim Bremsen – Ursache & Diagnose",
+  "slug": "auto-zieht-nach-rechts-beim-bremsen",
+  "category": "Auto",
+  "summary": "Wenn das Auto beim Bremsen nach rechts zieht, liegt meist ein Problem an der Bremsanlage oder Radaufhängung vor.",
+  "quick_answer": "Bremsbeläge, Bremssattel und Reifendruck auf beiden Seiten prüfen.",
+  "body_html": "<h2>Was passiert hier?</h2><p>Einseitiges Ziehen beim Bremsen entsteht, wenn eine Seite stärker bremst als die andere. Das führt zu ungleichmäßigem Bremsdruck.</p><h2>Ursachen</h2><p>Häufige Gründe sind festhängende Bremssättel, ungleichmäßig abgenutzte Bremsbeläge oder ein ungleicher Reifendruck.</p><h2>Lösung</h2><p>1. Reifendruck auf beiden Achsen prüfen.<br>2. Sichtprüfung der Bremsanlage durch Werkstatt.<br>3. Bremssättel schmieren oder ersetzen.<br>4. Nach Reparatur Probefahrt durchführen.</p>",
+  "keywords": ["auto", "zieht nach rechts", "bremsen", "bremssattel", "bremsdruck", "reifendruck", "fahrwerk", "werkstatt"],
+  "popularity": 68,
+  "date": "2025-10-27"
+}
+{
+  "title": "Hund frisst Gras und erbricht – wann ist das gefährlich?",
+  "slug": "hund-frisst-gras-und-erbricht",
+  "category": "Haustiere",
+  "summary": "Viele Hunde fressen Gras, um den Magen zu reinigen, doch häufiges Erbrechen kann auf ein Problem hindeuten.",
+  "quick_answer": "Gelegentliches Grasfressen ist normal – bei häufigem Erbrechen Tierarzt aufsuchen.",
+  "body_html": "<h2>Warum fressen Hunde Gras?</h2><p>Hunde fressen Gras, um überschüssige Magensäure loszuwerden oder Erbrechen auszulösen. Das ist meist harmlos.</p><h2>Wann wird es kritisch?</h2><p>Wenn der Hund regelmäßig erbricht, Appetit verliert oder müde wirkt, kann eine Magenreizung oder Parasitenbefall vorliegen.</p><h2>Was tun?</h2><p>1. Beobachten, wie oft das Verhalten auftritt.<br>2. Giftpflanzen im Garten ausschließen.<br>3. Tierarzt aufsuchen, wenn Symptome anhalten.</p>",
+  "keywords": ["hund", "gras fressen", "erbricht", "magenprobleme", "haustiere", "hunde verhalten", "tierarzt", "hund erbrechen"],
+  "popularity": 75,
+  "date": "2025-10-27"
+}
+{
+  "title": "Laptop wird heiß und schaltet sich ab – was tun?",
+  "slug": "laptop-wird-heiss-und-schaltet-sich-ab",
+  "category": "Technik",
+  "summary": "Ein überhitzter Laptop schaltet sich automatisch ab, um Schäden an Prozessor und Mainboard zu vermeiden.",
+  "quick_answer": "Lüfter reinigen, Wärmeleitpaste prüfen und Notebook auf ebener Fläche betreiben.",
+  "body_html": "<h2>Warum wird der Laptop heiß?</h2><p>Staub im Lüfter oder blockierte Luftauslässe verhindern, dass Wärme abgeführt wird. Das Gerät schützt sich dann durch Abschaltung.</p><h2>Lösung</h2><p>1. Lüftungsschlitze mit Druckluft reinigen.<br>2. Laptop auf harter Unterlage betreiben.<br>3. In regelmäßigen Abständen Lüfter warten lassen.<br>4. Wärmeleitpaste nach 2–3 Jahren erneuern.</p>",
+  "keywords": ["laptop", "überhitzung", "lüfter reinigen", "notebook wird heiß", "abschalten", "kühlung", "temperatur", "technikproblem"],
+  "popularity": 78,
+  "date": "2025-10-27"
+}
+{
+  "title": "Fehlercode E05 bei Siemens Trockner – Ursache & Behebung",
+  "slug": "fehlercode-e05-siemens-trockner",
+  "category": "Haushalt",
+  "summary": "Der Fehlercode E05 bei Siemens Trocknern deutet auf einen Temperatur- oder Sensorfehler hin.",
+  "quick_answer": "Temperatursensor reinigen, Luftwege prüfen und Gerät kurzzeitig vom Strom trennen.",
+  "body_html": "<h2>Was steckt hinter E05?</h2><p>Der Temperatursensor meldet unplausible Werte, meist durch Staub oder Flusen im Luftkanal. Das Gerät stoppt aus Sicherheitsgründen.</p><h2>Fehlerbehebung</h2><p>1. Stecker ziehen und Trockner abkühlen lassen.<br>2. Flusensieb und Wärmetauscher reinigen.<br>3. Temperaturfühler vorsichtig säubern.<br>4. Gerät neu starten.</p>",
+  "keywords": ["siemens", "trockner", "fehlercode e05", "sensorfehler", "temperatur", "wartung", "flusensieb", "reinigung"],
+  "popularity": 62,
+  "date": "2025-10-27"
+}
+{
+  "title": "Zahnschmerzen nach Füllung – wie lange ist das normal?",
+  "slug": "zahnschmerzen-nach-fuellung",
+  "category": "Gesundheit",
+  "summary": "Leichte Zahnschmerzen nach einer Füllung sind normal und sollten nach wenigen Tagen abklingen.",
+  "quick_answer": "Wenn Schmerzen länger als 5 Tage anhalten oder pulsieren, Zahnarzt aufsuchen.",
+  "body_html": "<h2>Warum treten Schmerzen nach der Füllung auf?</h2><p>Die Behandlung reizt den Zahnnerv und das umliegende Gewebe. Leichte Empfindlichkeiten sind normal.</p><h2>Wann wird es kritisch?</h2><p>Wenn Schmerzen stark sind, auf Wärme reagieren oder länger als eine Woche bestehen, kann eine Entzündung vorliegen.</p><h2>Was hilft?</h2><p>1. Kühlen und weiche Nahrung bevorzugen.<br>2. Schmerzmittel nach Empfehlung einnehmen.<br>3. Zahnarzt aufsuchen, wenn keine Besserung eintritt.</p>",
+  "keywords": ["zahnschmerzen", "füllung", "zahnbehandlung", "zahn schmerzt", "gesundheit", "zahnmedizin", "zahnarzt", "entzündung"],
+  "popularity": 70,
+  "date": "2025-10-27"
+}
+{
+  "title": "Auto startet nur mit Starthilfe – mögliche Ursachen",
+  "slug": "auto-startet-nur-mit-starthilfe",
+  "category": "Auto",
+  "summary": "Wenn das Auto nur mit Starthilfe anspringt, liegt meist ein Problem mit Batterie oder Lichtmaschine vor.",
+  "quick_answer": "Batteriespannung messen, Pole reinigen und ggf. Batterie austauschen.",
+  "body_html": "<h2>Woran liegt das?</h2><p>Eine schwache Batterie oder defekte Lichtmaschine sorgt dafür, dass nicht genug Strom für den Startvorgang vorhanden ist.</p><h2>So gehen Sie vor</h2><p>1. Spannung prüfen (mind. 12,4 V).<br>2. Batteriepole reinigen und festziehen.<br>3. Testen, ob Lichtmaschine lädt (14 V im Leerlauf).<br>4. Bei wiederkehrendem Problem Batterie tauschen.</p>",
+  "keywords": ["auto", "starthilfe", "batterie leer", "lichtmaschine", "startproblem", "auto springt nicht an", "spannung messen", "kfz"],
+  "popularity": 74,
+  "date": "2025-10-27"
+}
+{
+  "title": "Waschmaschine riecht muffig – so wird sie wieder frisch",
+  "slug": "waschmaschine-riecht-muffig",
+  "category": "Haushalt",
+  "summary": "Ein muffiger Geruch entsteht durch Bakterien, Schimmel und Waschmittelreste in der Maschine.",
+  "quick_answer": "Heißwaschgang mit Maschinenreiniger durchführen und Tür offen lassen.",
+  "body_html": "<h2>Ursache des Geruchs</h2><p>Niedrige Waschtemperaturen und Feuchtigkeit fördern Schimmelbildung in Gummi und Trommel.</p><h2>Lösung</h2><p>1. 90°C-Leerwaschgang mit Maschinenreiniger.<br>2. Tür und Waschmittelfach offen lassen.<br>3. Dichtung regelmäßig abwischen.<br>4. Auf Flüssigwaschmittel verzichten.</p>",
+  "keywords": ["waschmaschine", "muffiger geruch", "maschinenreiniger", "schimmel", "reinigung", "wäsche", "haushalt", "tipp"],
+  "popularity": 77,
+  "date": "2025-10-27"
+}
+{
+  "title": "Smartphone lädt nur bis 80 % – ist das ein Fehler?",
+  "slug": "smartphone-laedt-nur-bis-80-prozent",
+  "category": "Technik",
+  "summary": "Viele Smartphones stoppen bei 80 % Ladeleistung, um den Akku zu schützen.",
+  "quick_answer": "Akkuschutzmodus deaktivieren oder Gerät länger angeschlossen lassen.",
+  "body_html": "<h2>Warum bei 80 % Schluss ist</h2><p>Moderne Geräte wie iPhones oder Samsung-Modelle begrenzen den Ladevorgang, um die Lebensdauer der Batterie zu verlängern.</p><h2>So prüfen Sie die Einstellungen</h2><p>1. In den Akku- oder Batterieeinstellungen nach 'Optimiertem Laden' suchen.<br>2. Schutzmodus bei Bedarf deaktivieren.<br>3. Gerät neu starten.</p>",
+  "keywords": ["smartphone", "akku", "lädt nur bis 80 prozent", "batterieschutz", "ios", "android", "ladeproblem", "technik"],
+  "popularity": 65,
+  "date": "2025-10-27"
+}
+
 
 ]
